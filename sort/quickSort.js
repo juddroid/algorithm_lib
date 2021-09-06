@@ -13,7 +13,8 @@ const quickSort = (list) => {
   for (let i = 1; i < list.length; i++) {
     list[i] < list[0] ? left.push(list[i]) : right.push(list[i]);
   }
-
+  // 귀납적 증명
+  // 분할 정복
   let newList = [];
   newList = newList
     .concat(quickSort(left))
