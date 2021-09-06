@@ -6,8 +6,9 @@ const arr3 = [3, 5, 1];
 
 const quickSort = (list) => {
   if (list.length < 2) return list;
-
-  let pivot = list[0];
+  // let pivot = list[0];
+  let pivot = list[Math.floor(list.length / 2)];
+  // console.log(pivot);
   const left = [];
   const right = [];
   for (let i = 1; i < list.length; i++) {
