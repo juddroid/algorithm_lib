@@ -1,9 +1,4 @@
-class Node {
-  constructor(data) {
-    this.data = data;
-    this.next = null;
-  }
-}
+import Node from './node.js';
 
 class Stack extends Node {
   constructor(data) {
@@ -44,3 +39,8 @@ console.log(stack.pop());
 console.log(stack);
 console.log(stack.pop());
 console.log(stack);
+console.log(stack.isEmpty());
+console.log(stack.pop());
+console.log(stack.isEmpty());
+console.log(stack.pop());
+console.log(stack.isEmpty());
